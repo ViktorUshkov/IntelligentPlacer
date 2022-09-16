@@ -37,4 +37,4 @@
 
 **Примеры входных фотографий**
 
-[размеченные примеры]
+[размеченные примеры](https://github.com/ViktorUshkov/IntelligentPlacer/blob/develop/MarkedUpDataTests.md)
