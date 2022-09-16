@@ -33,7 +33,10 @@
 
 **Фотографии предметов и поверхности**
 
-[items](https://github.com/ViktorUshkov/IntelligentPlacer/tree/develop/items)
+[предметы и поверхность](https://github.com/ViktorUshkov/IntelligentPlacer/tree/develop/items)
 
 **Примеры входных фотографий**
 
+[примеры фотографий]
+
+[размеченные примеры]
