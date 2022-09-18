@@ -1,25 +1,25 @@
 # Размеченные примеры
 
 1) Некорректные данные: отсутствует объект. *Ожидаемый вывод:* **False**
-![test1](https://user-images.githubusercontent.com/63870567/190708445-58b595fa-7f3a-49a7-b1fe-8cc91bdc4e26.jpg)
+![test1](https://user-images.githubusercontent.com/63870567/190925761-1edac2d4-3b4e-4d6f-9c02-e4fd80b29507.jpg)
 3) Некорректные данные: отсутствует многоугольник. *Ожидаемый вывод:* **False**
-![test2](https://user-images.githubusercontent.com/63870567/190708508-0e74468d-3539-4d75-868a-fcdf63d289eb.jpg)
+![test2](https://user-images.githubusercontent.com/63870567/190925766-e1e0f86c-cbe1-4d75-9536-4118467b343a.jpg)
 5) Корректные данные: один предмет помещается во многоугольник. *Ожидаемый вывод:* **True**
-![test31](https://user-images.githubusercontent.com/63870567/190721475-650605a8-fab0-4d29-a267-a85f04eb7b85.jpg)
-![test32](https://user-images.githubusercontent.com/63870567/190721494-9bd3cd77-3530-418b-b6c0-2712eed41d29.jpg)
+![test31](https://user-images.githubusercontent.com/63870567/190925775-6ce00df7-9ee3-48c0-b489-fa21df077895.jpg)
+![test32](https://user-images.githubusercontent.com/63870567/190925776-67f30846-bf3f-461d-a0ba-857e7b868acd.jpg)
 7) Корректные данные: один предмет не помещается во многоугольник. *Ожидаемый вывод:* **False**
-![test4](https://user-images.githubusercontent.com/63870567/190721559-f6b8bfd4-e6dc-4eb9-90e8-89461ef5e3f8.jpg)
+![test4](https://user-images.githubusercontent.com/63870567/190925780-14e53057-b206-4f67-8a06-3d66f4eddab3.jpg)
 9) Корректные данные: два предмета помещаются во многоугольник. *Ожидаемый вывод:* **True**
-![test5](https://user-images.githubusercontent.com/63870567/190721673-f4a0a449-9797-4434-961d-03f8d87d5492.jpg)
+![test5](https://user-images.githubusercontent.com/63870567/190925782-3c465662-c2ac-4f62-b827-0d9d7b61f8b9.jpg)
 11) Корректные данные: два предмета не помещаются во многоугольник, но при этом один из них помещается по отдельности. *Ожидаемый вывод:* **False**
-![test9](https://user-images.githubusercontent.com/63870567/190721762-d948ecc3-80db-442b-9b08-a3555c219768.jpg)
+![test6](https://user-images.githubusercontent.com/63870567/190925783-4abadf01-542b-4a62-8a23-33405ed7e01c.jpg)
 12) Корректные данные: два предмета не помещаются во многоугольник, но при этом оба помещаются по отдельности. *Ожидаемый вывод:* **False**
-![test6](https://user-images.githubusercontent.com/63870567/190722103-d750608f-8e8e-4f84-b817-1f359f6effb5.jpg)
+![test7](https://user-images.githubusercontent.com/63870567/190925784-cedaaa55-ff57-444d-a2e1-b32b76e4b83a.jpg)
 14) Корректные данные: два предмета не помещаются во многоугольник, и оба не помещаются по отдельности. *Ожидаемый вывод:* **False**
-![test7](https://user-images.githubusercontent.com/63870567/190722807-da5339c7-4b64-4f53-80c5-5ec89f1215a1.jpg)
+![test8](https://user-images.githubusercontent.com/63870567/190925790-3f336009-6823-4c3c-a84a-acae05009204.jpg)
 14) Корректные данные: много предметов помещаются во многоугольник. *Ожидаемый вывод:* **True**
-![test8](https://user-images.githubusercontent.com/63870567/190722507-acffa879-de81-4b84-9173-a5bc28ddbed4.jpg)
+![test9](https://user-images.githubusercontent.com/63870567/190925809-b49825e7-36da-4381-929e-6c9ca734eeb5.jpg)
 16) Корректные данные: много предметов не помещаются во многоугольник. *Ожидаемый вывод:* **False**
-![test10](https://user-images.githubusercontent.com/63870567/190722929-22589178-f77e-43eb-bfb7-b05ddfd55428.jpg)
+![test10](https://user-images.githubusercontent.com/63870567/190925814-615f91ea-fa00-4cff-8971-e0f280682dff.jpg)
 
 
