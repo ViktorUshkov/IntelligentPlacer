@@ -8,7 +8,7 @@ from skimage.feature import canny
 def get_images(path):
     data = []
     for file in os.listdir(path):
-        if file.endswith('.jpg'):
+        if file.endswith('.jpg') or file.endswith('.jpeg'):
             img = cv2.imread(os.path.join(path, file))
             data.append((img, file))
     return data
@@ -55,4 +55,4 @@ def area_check(polygon, items):
 
 #  функция, определяющая, войдут ли предметы во многоугольник
 def can_fit(polygon, items):
-    return area_check(polygon, items)  # пока просто проверка на площади
+    return len(polygon) and len(items) and area_check(polygon, items)  # пока просто проверка на площади и наличие контуров
