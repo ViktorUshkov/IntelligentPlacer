@@ -55,4 +55,32 @@ def area_check(polygon, items):
 
 #  функция, определяющая, войдут ли предметы во многоугольник
 def can_fit(polygon, items):
-    return len(polygon) and len(items) and area_check(polygon, items)  # пока просто проверка на площади и наличие контуров
+    if len(polygon) == 0 or len(items) == 0: # проверка на наличие контуров многоугольника и контуров предметов
+        return False
+    # TODO: начать работу над реализацией алгоритма
+    return area_check(polygon, items)  # проверка на площади
+
+
+#  функция, которая по полученному датасету возвращает результаты работы программы
+def body(dataset):
+    midline = 532
+    height = 1065
+    width = 800
+
+    poly_contours_from_data = []
+    items_contours_from_data = []
+
+    for data in dataset:
+        image = data[0]
+        polygon = image[0:midline, 0:width]
+        items = image[midline:height, 0:width]
+        poly_contours_from_data.append(get_contour_polygon(polygon))
+        items_contours_from_data.append(get_contours_items(items))
+
+    can_fit_answers = []
+
+    for i in range(len(dataset)):
+        result = can_fit(poly_contours_from_data[i], items_contours_from_data[i])
+        can_fit_answers.append(int(result))
+
+    return can_fit_answers
