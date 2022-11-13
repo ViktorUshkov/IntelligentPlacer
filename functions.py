@@ -53,12 +53,24 @@ def area_check(polygon, items):
     return cv2.contourArea(polygon) > sum([cv2.contourArea(item) for item in items])
 
 
+# функция, сравнивающая радиусы описанной окружности предмета и описанной окружности многоугольника
+def radius_check(polygon, items):
+    items_lesser = True
+    (_, _), poly_r = cv2.minEnclosingCircle(polygon)
+    for item in items:
+        (_, _), item_r = cv2.minEnclosingCircle(item)
+        if item_r > poly_r:
+            return False
+
+    return items_lesser
+
+
 #  функция, определяющая, войдут ли предметы во многоугольник
 def can_fit(polygon, items):
     if len(polygon) == 0 or len(items) == 0: # проверка на наличие контуров многоугольника и контуров предметов
         return False
     # TODO: начать работу над реализацией алгоритма
-    return area_check(polygon, items)  # проверка на площади
+    return area_check(polygon, items) and radius_check(polygon, items) # проверка на площади и радиусы
 
 
 #  функция, которая по полученному датасету возвращает результаты работы программы
